@@ -1,0 +1,30 @@
+* { 
+    box-sizing: border-box;
+}
+
+html, body{ 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', -apple-system, "Segoe UI",Roboto, sans-serif;
+    color: #0d1320;
+}
+
+.site-header {
+    background-color:  #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 0 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
