@@ -41,7 +41,7 @@ body {
 }
 
 .text-logo {
-    font-size: 1.2rem;
+    font-size: 24px;
     font-weight: bold;
     color: #0B0F19;
 }
@@ -121,3 +121,8 @@ body {
     max-width: 400px;
 }
 
+.iphone2-icon {
+    width: 746px;
+    max-width: 936px;
+
+}
