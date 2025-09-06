@@ -16,77 +16,108 @@ body {
     border-bottom: 1px solid #e5e7eb;
 }
 
-.nav {
-    height: 5dvh;
+.nav.container {
+    height: 8dvh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.container {
     padding: 0 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+}
+
+.nav-logo img {
+    height: auto;
+    width: 32px;
+    display: block;
+}
+
+.text-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0B0F19;
+}
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #565973;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bi {
+    font-size: 24px;
+    line-height: 1;    
+    margin-left: 8px;
+}
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+
     border: 1px solid #6366F1;
     background-color: #6366F1;
     color: #ffffff;
+
     border-radius: 4px;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     cursor: pointer;
     text-decoration: none;
-    padding: 6px 16px;
-    align-items: center;
-    justify-content: center;
 } 
-.text-logo {
-    font-size: 15px;
-    font-weight: 700;
-    color: #0B0F19;
-    text-decoration: none;
-    
-}
-.link {
-    text-decoration: none;
-    color: #565973;
-    font-size: 12px;
-    margin: 20px;
-
-}
-
-.bi {
-    font-size: 24px;
-    vertical-align: middle;
-    margin-left: 8px;
-}
 
 .hero {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    text-align: left;
+    padding: 150px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.hero-left {
+    flex: 1;
+}
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 
 }
+.store-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
 .heading-1 {
     font-size: 32px;
     font-weight: 700;
     color: #0B0F19;
     margin: 5px;
-    
 }
+
 .h-undertext {
     font-size: 18px;
     color: #565973;
-    margin-top: 8px;
+    margin-top: 10px;
     max-width: 400px;
 }
 
