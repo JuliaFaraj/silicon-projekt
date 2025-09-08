@@ -84,22 +84,29 @@ body {
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: left;
-    padding: 150px 25px;
+    padding: 100px 35px;
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
+  
 }
+
+
 .hero-left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .hero-right {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: center;
+    align-items: center;
 }
 .store-icons {
     display: flex;
@@ -122,7 +129,101 @@ body {
 }
 
 .iphone2-icon {
-    width: 746px;
-    max-width: 936px;
+    max-width: 100%;
+    height: auto;
 
+}
+
+.brands{
+  text-align: center;
+  margin-top: -20px;
+}
+ 
+.logos img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.hero-section { 
+    background: radial-gradient( circle at 85% 50%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(255, 255, 255, 0.07) 83% ); 
+}
+
+.features-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.features-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.iphone-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.features-right {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #0B0F19;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.feature-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.heading-2 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+  color: #0B0F19;
+  max-width: 180px;
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  color: #565973;
+  max-width: 220px;
 }
