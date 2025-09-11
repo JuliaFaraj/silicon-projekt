@@ -271,4 +271,76 @@ body {
   
 }
   
-  
+.app-features {
+  padding: 80px 24px;
+  background: #fff;
+}
+
+.features-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 80px;                 
+  align-items: start;
+}
+
+/* Rubriker i blocken */
+.feature-text h2,
+.feature-text2 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: #0B0F19;
+}
+
+/* --- Vänster lista med ✔ --- */
+.checklist-checks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.checklist-checks li {
+  position: relative;
+  padding-left: 36px; /* plats för cirkeln */
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #565973;
+  line-height: 1.6;
+}
+
+.checklist-checks li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366F1, #DA46EF);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Höger lista med egna ikoner --- */
+.checklist-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.checklist-icons li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #565973;
+  line-height: 1.6;
+}
+
