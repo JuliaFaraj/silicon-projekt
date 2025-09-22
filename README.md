@@ -32,8 +32,8 @@ Fokus har varit att träna på struktur i HTML, layout med CSS (flexbox och grid
 ---
 
 # Reflektion
-Planen var initialt att påbörja enligt G nivå kritreier och sedan bygga på till VG kriterier men efter att vi i efterhand förstod att det kunde vara krångligt att göra på det viset, 
-tog jag beslutet att nöja mig med G kriterier för denna gången för att inte rikera att min befintliga kod krånglas till. 
+för att utföra uppgiften har jag samarbetat med klasskamerater (Helen Bergari & Dana Amir) där vi alla har gjort ett eget projekt, men suttit tillsammans för att hjälpas åt och disskutera de olika momenten. Planen var initialt att påbörja enligt G nivå kritreier och sedan bygga på till VG kriterier men efter att vi i efterhand förstod att det kunde vara krångligt att göra på det viset, tog vi beslutet att nöja oss med G kriterier för denna gången för att inte rikera att våran befintliga kod krånglas till. 
+
 Under arbetet har jag tagit hjälp av AI (Chat gpt) för att få tips, strukturera i CSS och förklara hur vissa saker fungerar. 
 Jag har dock skrivit och anpassat koden själv och det var viktigt för mig att förstå varför saker ska göras på ett visst sätt. 
 AI-stödet gjorde att jag kunde finslipa detaljer och samtidigt lära mig mer om hur man bygger upp en sida på ett organiserat och enkelt sätt.  
