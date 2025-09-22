@@ -1,157 +1,163 @@
-* { 
-    box-sizing: border-box;
+/* -------- GLOBAL -------- */
+/* Tar bort standardmarginaler + box-sizing = enklare beräkningar */* {
+  box-sizing: border-box;
 }
 
-html, body{ 
-    margin: 0;
-    padding: 0;
-}
+html,
 body {
-    font-family: "Open Sans", sans-serif;
-
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* ------------------ NAVIGATION ------------------ */
 .site-header {
-    background-color:  #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
+/* Flex här så att loggan ligger till vänster och knapparna till höger */
 .nav.container {
-    height: 8dvh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+  height: 8dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 
 .nav-logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
 }
 
 .nav-logo img {
-    height: auto;
-    width: 32px;
-    display: block;
+  height: auto;
+  width: 32px;
+  display: block;
 }
 
 .text-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0B0F19;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0B0F19;
 }
+
 .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .link {
-    text-decoration: none;
-    color: #565973;
-    font-size: 12px;
-    display: inline-flex;
-    align-items: center;
+  text-decoration: none;
+  color: #565973;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .bi {
-    font-size: 24px;
-    line-height: 1;    
-    margin-left: 8px;
+  font-size: 24px;
+  line-height: 1;
+  margin-left: 8px;
 }
+
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 16px;
-
-    border: 1px solid #6366F1;
-    background-color: #6366F1;
-    color: #ffffff;
-
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    cursor: pointer;
-    text-decoration: none;
-} 
-
-.hero {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
-    padding: 100px 35px;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2rem;
-  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border: 1px solid #6366F1;
+  background: #6366F1;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+  text-decoration: none;
 }
 
+
+/* ------------------ HERO SECTION ------------------ */
+.hero-section {
+  background: radial-gradient(
+    circle at 85% 50%,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(218, 70, 239, 0.05) 42%,
+    rgba(255, 255, 255, 0.07) 83%
+  );
+}
+
+/* Hero delas i två kolumner: text till vänster, bild till höger */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  padding: 100px 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
 
 .hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-}
 .hero-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .store-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
 }
 
 .heading-1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #0B0F19;
-    margin: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0B0F19;
+  margin: 5px;
 }
 
 .h-undertext {
-    font-size: 18px;
-    color: #565973;
-    margin-top: 10px;
-    max-width: 500px;
+  font-size: 18px;
+  color: #565973;
+  margin-top: 10px;
+  max-width: 500px;
 }
 
 .iphone2-icon {
-    max-width: 100%;
-    height: auto;
-
+  max-width: 100%;
+  height: auto;
 }
 
-.brands{
+.brands {
   text-align: center;
   margin-top: -20px;
 }
- 
-.logos img {
-  max-width: 100%;
-  height: auto;
-  opacity: 0.9;
-}
 
-.hero-section { 
-    background: radial-gradient( circle at 85% 50%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(255, 255, 255, 0.07) 83% ); 
-}
 
+/* ------------------ FEATURES SECTION ------------------ */
 .features-section {
   padding: 60px 20px;
-  background-color: #fff;
+  background: #fff;
 }
 
 .features-wrapper {
@@ -170,7 +176,7 @@ body {
   justify-content: center;
 }
 
-.iphone-image {
+.features-img {
   max-width: 100%;
   height: auto;
 }
@@ -190,39 +196,40 @@ body {
   font-size: 2rem;
   color: #0B0F19;
 }
+
 .features-lead {
-  margin: 0 0 20px 0; 
+  margin: 0 0 20px 0;
   font-size: 16px;
   line-height: 1.6;
   color: #565973;
   max-width: 700px;
 }
 
-.features-grid {
+/* Grid med 2 kolumner, varje ruta = ikon + text */
+.features-grid--about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 30px;
-  
 }
 
+/* Featurekort får lite rundade hörn + padding så det ser "kort-aktigt" ut */
 .feature-item {
-  background-color: #ffffff;
+  background: #fff;
   border-radius: 12px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
   gap: 16px;
   text-align: left;
   align-items: flex-start;
 }
-
 
 .feature-icon {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
 }
-.feature-text{
+
+.feature-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,23 +240,23 @@ body {
   font-weight: 600;
   color: #0B0F19;
   font-size: 18px;
-
 }
 
 .feature-text p {
   margin: 0;
-  font-size:  14px;
+  font-size: 14px;
   color: #565973;
   line-height: 1.5;
-
 }
 
+
+/* ------------------ SLIDE SECTION ------------------ */
 .slide {
-  background-color: #F3F6FF;
-
+  background: #F3F6FF;
 }
+
 .slide .container {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -265,30 +272,31 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-
 }
 
 .img-caption {
   text-align: center;
-  max-width: 600px;   
-  margin: 20px auto 0;    
-  font-size: 16px;    
-  line-height: 1.6;  
-  color: #0a0c17;    
-  
+  max-width: 600px;
+  margin: 20px auto 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0a0c17;
 }
-  
+
+
+/* ------------------ APP FEATURES ------------------ */
+/* Separat grid så det inte krockar med den andra features-griden */
 .app-features {
   padding: 80px 24px;
   background: #fff;
 }
 
-.features-grid {
+.features-grid--app {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 80px;                 
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   align-items: start;
 }
 
@@ -300,6 +308,9 @@ body {
   color: #0B0F19;
 }
 
+
+/* ------------------ CHECKLIST ------------------ */
+/* Sätter in ✔ framför listan via ::before */
 .checklist-checks {
   list-style: none;
   padding: 0;
@@ -308,7 +319,7 @@ body {
 
 .checklist-checks li {
   position: relative;
-  padding-left: 36px; /* plats för cirkeln */
+  padding-left: 36px;
   margin-bottom: 16px;
   font-size: 16px;
   color: #565973;
@@ -326,7 +337,7 @@ body {
   background: linear-gradient(135deg, #6366F1, #DA46EF);
   color: #fff;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,6 +377,9 @@ body {
   line-height: 1.6;
 }
 
+
+/* ------------------ TESTIMONIALS ------------------ */
+/* Grid med 2 kolumner, varje ruta = ikon + text */
 .testimonials {
   background: #F3F6FF;
   padding: 80px 0;
@@ -386,6 +400,7 @@ body {
 .testimonials-left {
   flex: 0 0 35%;
 }
+
 .testimonials-left h2 {
   margin: 0;
   color: #0B0F19;
@@ -433,15 +448,16 @@ body {
   gap: 4px;
   margin: 4px 0 10px;
 }
+
 .star {
   font-size: 14px;
-  color: #e5e7eb; /* grå för tom */
-}
-.star.full {
-  color: #F59E0B; /* gul för fylld */
+  color: #e5e7eb;
 }
 
-/* Text i kortet */
+.star.full {
+  color: #F59E0B;
+}
+
 .t-card p {
   color: #565973;
   font-size: 14px;
@@ -449,48 +465,44 @@ body {
   margin: 0 0 12px;
 }
 
-/* Användarinfo */
 .t-user {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .t-user img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
 }
+
 .t-user strong {
   display: block;
   font-size: 14px;
   color: #0B0F19;
 }
+
 .t-user span {
   display: block;
   font-size: 12px;
   color: #6B7280;
 }
 
-/* Responsiv fallback */
-@media (max-width: 900px) {
-  .testimonials-row {
-    flex-direction: column;
-  }
-  .t-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
-/* Sektion & gridlayout (ingen responsivitet) */
+/* ------------------ FAQ (ACCORDION) ------------------ */
+/* FAQ kör på details/summary, smidigt för att slippa JS */
 .faqs {
-  background: #FFFFFF;
+  background: #fff;
   padding: 80px 0;
 }
+
 .faqs .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .faqs-grid {
   display: grid;
   grid-template-columns: 35% 65%;
@@ -498,13 +510,13 @@ body {
   align-items: start;
 }
 
-/* Vänster kolumn */
 .faqs-left h2 {
   margin: 0 0 12px 0;
   color: #0B0F19;
   font-size: 32px;
   line-height: 1.25;
 }
+
 .faqs-lead {
   margin: 0 0 24px 0;
   color: #565973;
@@ -517,6 +529,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
 .contact-card {
   display: flex;
   align-items: center;
@@ -527,45 +540,50 @@ body {
   border-radius: 12px;
   background: #F8FAFF;
   color: #0B0F19;
-  box-shadow: 0 6px 16px rgba(17,24,39,0.06);
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
 }
-.contact-card:hover { background: #F3F6FF; }
+
+.contact-card:hover {
+  background: #F3F6FF;
+}
+
 .contact-icon {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(99,102,241,0.12);
+  background: rgba(99, 102, 241, 0.12);
   color: #6366F1;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
 }
+
 .contact-text strong {
   display: block;
   font-size: 14px;
   color: #0B0F19;
 }
+
 .contact-text span {
   display: block;
   font-size: 13px;
   color: #6366F1;
 }
 
-/* Höger kolumn – accordion med <details> */
 .accordion {
   display: grid;
   gap: 12px;
 }
+
 .acc-item {
   border: 1px solid #E5E7EB;
   border-radius: 12px;
-  background: #FFFFFF;
-  box-shadow: 0 6px 16px rgba(17,24,39,0.06);
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
   overflow: hidden;
 }
 
-/* frågeraden */
 .acc-summary {
   list-style: none;
   cursor: pointer;
@@ -576,7 +594,10 @@ body {
   color: #0B0F19;
   outline: none;
 }
-.acc-summary::-webkit-details-marker { display: none; } /* Safari/Chrome marker */
+
+.acc-summary::-webkit-details-marker {
+  display: none;
+}
 
 .acc-summary::after {
   content: "▾";
@@ -588,37 +609,39 @@ body {
   color: #6366F1;
   font-size: 18px;
 }
+
 .acc-item[open] .acc-summary::after {
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* svarsruta */
 .acc-panel {
   padding: 0 18px 18px 18px;
   color: #565973;
   font-size: 15px;
   line-height: 1.65;
-  background: #FFFFFF;
+  background: #fff;
   border-top: 1px solid #E5E7EB;
 }
 
-/* öppet tillstånd – subtil highlight (valfritt) */
 .acc-item[open] {
   background: #F8F7FF;
   border-color: #E0E7FF;
 }
 
 
-/* Sektion och kort */
+/* ------------------ NEWSLETTER ------------------ */
+/* Input och knapp ligger bredvid varandra i flex för enkel formulärlayout */
 .newsletter {
-  padding: 32px 0 60px; /* luft före footern */
-  background: #FFFFFF;  /* följ din ljusa sida */
+  padding: 32px 0 60px;
+  background: #fff;
 }
+
 .newsletter .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .newsletter-card {
   display: flex;
   align-items: center;
@@ -628,65 +651,67 @@ body {
   border: 1px solid #E5E7EB;
   border-radius: 12px;
   background: #F3F6FF;
-  box-shadow: 0 6px 16px rgba(17,24,39,0.06);
-
-  max-width: 900px;   /* gör rutan smalare */
-  margin: 0 auto;     /* centrera i mitten */
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Vänster del: ikon + text */
 .newsletter-left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .nl-bell {
   width: 36px;
   height: 36px;
   display: block;
   border-radius: 8px;
 }
+
 .nl-text strong {
   font-size: 16px;
   line-height: 1.4;
   color: #0B0F19;
 }
 
-/* Form: input + knapp */
 .newsletter-form {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .nl-input {
-  width: 260px;              /* fast bredd så allt håller linjerna */
+  width: 260px;
   height: 36px;
   padding: 0 12px;
   border: 1px solid #E5E7EB;
   border-radius: 8px;
-  background: #FFFFFF;
+  background: #fff;
   color: #0B0F19;
   font-size: 14px;
   outline: none;
 }
+
 .nl-input::placeholder {
- color: #9CA3AF; 
+  color: #9CA3AF;
 }
 
 .nl-input:focus {
   border-color: #6366F1;
-  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
-/* Återanvänd din .btn men sätt höjd så den matchar input */
 .nl-btn {
   height: 36px;
   padding: 0 14px;
-  line-height: 36px;  /* vertikal centrering av text */
+  line-height: 36px;
 }
 
+
+/* ------------------ FOOTER ------------------ */
 footer {
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
